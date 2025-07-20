@@ -1,0 +1,156 @@
+@font-face {
+    font-family: font1;
+    src: url(font/Arimo-Regular.ttf);
+}
+@font-face {
+    font-family: font2;
+    src: url(font/Alatsi-Regular.ttf);
+}
+@font-face {
+    font-family: font3;
+    src: url(font/ADLaMDisplay-Regular.ttf);
+}
+@font-face {
+    font-family: font4;
+    src: url(font/ABeeZee-Regular.ttf);
+}
+:root{
+    --first-text-color: #061d7a;
+    --second-text-color: #1c8806;
+    --third-text-color: #a01111;
+    --first-background-color: white;
+    --second-background-color: rgb(4, 2, 29);
+    --first-shadow-color: ;
+    --first-hover-color: ;
+   
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+.container{
+    position: relative;
+    width: 100%;
+    min-width: 70%;
+    height: 100%;
+    min-height: 70%;
+}
+.header-section{
+    background-color: red;
+    position: relative;
+    display: contents;
+    width: 100%;
+    height: 100%;
+
+}
+.header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding: 10px;
+    height: 20vh;
+}
+.logo{
+    font-size: 2rem;
+    color: var(--first-text-color);
+    font-family: font4;
+    position: relative;
+}
+.logo::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    color: red;
+    background-color: #1c8806;
+    box-shadow: #2db811 3px 1px 0.1px .1px;
+    border-radius: 80px;
+    bottom: 2px;
+    left: -3px;
+}
+.logo::before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    color: red;
+    background-color: #1c8806;
+    box-shadow: #2db811 3px 1px 0.1px .1px;
+    border-radius: 30px;
+    bottom: 2px;
+    left: -3px;
+}
+span::after{
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 3px;
+    color: red;
+    background-color: #1c8806;
+    box-shadow: #2db811 3px 1px 0.1px .1px;
+    border-radius: 80px;
+    top: 2px;
+    right: -3px;
+}
+span::before{
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 20px;
+    color: red;
+    background-color: #1c8806;
+    box-shadow: #2db811 3px 1px 0.1px .1px;
+    border-radius: 30px;
+    right: -3px;
+    top: 2px;
+}
+.nav{
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    list-style: none;
+}
+.nav ul{
+    display: flex;
+    position: relative;
+    gap: 2rem;
+}
+.nav a{
+    display: flex;
+    position: relative;
+    font-size: 1.2rem;
+    font-family: font4;
+    font-weight: 600;
+    color: rgb(247, 246, 246);
+    border-radius: 30px;
+    padding: 1px 10px;
+    background-color: var(--second-text-color);
+}
+.nav a:hover{
+    background-color: #061d7a;
+   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
