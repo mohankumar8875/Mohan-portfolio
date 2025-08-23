@@ -1,36 +1,74 @@
-@media only screen and (max-width: 835px) {
-
+ @media only screen and (max-width: 584px) {
+   .nav ul{
+   position: absolute;
+   flex-direction: column;
+   align-items: center;
+   left: 0;
+   right: 0;
+   top: -30px;
+   height: 0;
+   backdrop-filter: blur(20px);
+   overflow: hidden;
+   width: 100%;
+   z-index: 1;
+   }
+   .nav ul li{
+      padding: 10px;
+     
+   }
+   .menu-btn{
+    display: block;
+    z-index: 100;
+    padding-left: 90px;
+ }
+ .logo{
+    z-index: 100;
 }
-
-
-@media only screen and (max-width: 584px) {
- .nav{
-   display: none;
- 
- }
- .nav ul li{
-    padding: 20px;
- }
- .menu-bar{
-    display: block;
- }
- #check:checked~.menu-bar #open-menu{
-    display: none;
- }
-  #check:checked~.menu-bar #close-menu{
-    display: block;
- }
-  #check:checked~.nav #navbar{
-    top: 70px;
- }
- /* Home section */
- 
-.home-section{
+   .home-section{
     flex-direction: column-reverse;
 }
-.text-box{
-    flex-wrap: wrap;
+.home-section{
+   justify-items: center;
+    align-items: center;
+    gap: 10px;
+    left: 0;
+    right: 0;  
 }
+.dwlbtn a{
+   margin-bottom: 30px;
+}
+.text-box{
+    display: block;
+    justify-items: center;
+    align-items: center;
+    gap: 1px;
+    left: 0;
+    right: 0;
+}
+.profile-section{
+   flex-wrap: wrap;
+   width: 100%;
+   top: 70px;
+   
+}
+.profile-section img{
+   border-radius: 40px;
+   top: 40px;
+   
+}
+.about-section .heading{
+   left: 35%;
+   justify-content: center;
+}
+.text-box p {
+flex-wrap: wrap;
+}
+.skill-list{
+ display: flex;
+ padding-bottom: 50px;
+
+}
+
 }
 
 

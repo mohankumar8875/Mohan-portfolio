@@ -9,26 +9,27 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-<header>
-        <div class="logo">
-        <h3>Moha<span>n</span></h3>
-        </div>
-        <div class="nav" id="navbar">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </div>
-        <input type="checkbox" id="check">
-        <label for="check" class="menu-bar">
-            <i class="fa-solid fa-bars" id="open-menu"></i>
-            <i class="fa-solid fa-x"id="close-menu"></i>
-        </label>
-</header>
+<div class="navbar">
+       <div class="logo">
+       <h3>Mohan</h3>
+       </div>
+       <input type="checkbox" id="check">
+       <label for="check" class="menu-btn">
+           <i class="fa-solid fa-bars" id="open-menu"></i>
+           <i class="fa-solid fa-x"id="close-menu"></i>
+       </label>
+       <div class="nav" id="menu-bar">
+        <ul>
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+</div>
 <!-- Home section -->
-   <div class="home-section">
+ <home>
+   <div class="home-section" id="home">
     <div class="text-box">
         <div class="sub-text">
             <h6>Hello I'm</h6>
@@ -42,13 +43,44 @@
         <div class="p-text">
             <p>frontend developer with a passion for creation visually stunning and user-friendly websites</p>
         </div>
+        <div class="dwlbtn">
+            <a href="https://drive.google.com/file/d/1iHWpKXnwHTqrU6mZJvllTTnFDw2oHeck/view?usp=drive_link"><h2>Download CV</h2></a>
+            
+        </div>
         </div>
         <div class="home-image">
             <span-img><img src="images/OIP.jpg" alt=""></span-img>
         </div>
 </div>
+</home>
+<!-- about section -->
+ <div class="about-section" id="about">
+    <div class="heading">
+        <h2>About</h2>
+    </div>
+<div class="profile-section">
+    <img src="images/OIP.jpg" alt="">
+<div class="text-box">
+    <p>As a frontend developer, I craft modern, responsive web interfaces with clean code and seamless user experiences. Let's collaborate to turn your vision into a digital reality that shines with flawless performance and captivating design.</p>
+    <div class="skill-box">
+    <div class="skill-heading">
+        <h2>Skills</h2>
+    </div>
+    <div class="skill-list">
+        <h5>MTML</h5>
+        <h5>CSS</h5>
+        <h5>JavaScript</h5>
+        <h5>Git & Github</h5>
+        <h5>Figma</h5>
+    </div>
+    </div>
+</div>
+ </div>
+ </div>
 
 <script src="editor.js"></script>
 </body>
 </html>
+
+
 

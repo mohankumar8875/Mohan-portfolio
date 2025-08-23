@@ -36,126 +36,171 @@ html{
     list-style: none;
 }
 /* navlogo and nav bar codes */
-header{
-    display: flex;
-    position: relative;
-    margin: 7px;
-    align-items: center;
-    justify-content: space-around;
-}
-.logo{
-    position: relative;
-    font-size: 1.7rem;
-    color: var(--first-text-color);
+@font-face {
     font-family: font1;
+    src: url(fonts/Arimo/Arimo-Regular.ttf);
 }
-.logo::after{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 3px;
-    color: red;
-    background-color: #1c8806;
-    box-shadow: #2db811 3px 1px 0.1px .1px;
-    border-radius: 80px;
-    bottom: 2px;
-    left: -3px;
+@font-face {
+    font-family: font2;
+    src: url(fonts/Mikado_Ultra.otf);
 }
-.logo::before{
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 20px;
-    color: red;
-    background-color: #1c8806;
-    box-shadow: #2db811 3px 1px 0.1px .1px;
-    border-radius: 30px;
-    bottom: 2px;
-    left: -3px;
+@font-face {
+    font-family: font3;
+    src: url(fonts/adlam-display/ADLaMDisplay-Regular.ttf);
 }
-span::after{
-    content: '';
-    position: absolute;
-    width: 20px;
-    height: 3px;
-    color: red;
-    background-color: #1c8806;
-    box-shadow: #2db811 3px 1px 0.1px .1px;
-    border-radius: 80px;
-    top: 2px;
-    right: -3px;
+@font-face {
+    font-family: font4;
+    src: url(font/ABeeZee-Regular.ttf);
 }
-span::before{
-    content: '';
-    position: absolute;
-    width: 3px;
-    height: 20px;
-    color: red;
-    background-color: #1c8806;
-    box-shadow: #2db811 3px 1px 0.1px .1px;
-    border-radius: 30px;
-    right: -3px;
-    top: 2px;
-}
-.menu-bar{
-    font-size: 1.5rem;
-    align-items: center;
-    display: none;
-    color: var(--first-text-color);
-    transition: 1.5s;
-    cursor: pointer;
-}
-.menu-bar:hover{
-    transform: rotate(180deg);
-    color: #1c8806;
+:root{
+    --first-text-color: #061d7a;
+    --second-text-color: #1c8806;
+    --third-text-color: #a01111;
+    --first-background-color: white;
+    --second-background-color: rgb(4, 2, 29);
+    --first-shadow-color: ;
+    --first-hover-color: #1c8806;
    
 }
-#check{
-    display: none;
+html{
+    scroll-behavior: smooth;
+    transition: 3s;
 }
-.menu-bar #close-menu{
-    display: none;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
 }
-.nav{
-    position: relative;
-    display: flex;
-    font-family: font3;
-    font-weight: 500;
-    transition: 5s;
+/* header nav bar */
+.navbar{
+    padding: 10px;
+   display: flex;
+   justify-content: center;
+   justify-content: space-around;
+   
 }
+.logo{
+   position: relative;
+   font-size: 2rem;
+   color: var(--first-text-color);
+   font-family: font1;
+}
+.logo::after{
+   content: '';
+   position: absolute;
+   width: 20px;
+   height: 3px;
+   color: red;
+   background-color: #1c8806;
+   box-shadow: #2db811 3px 1px 0.1px .1px;
+   border-radius: 80px;
+   bottom: 2px;
+   left: -3px;
+}
+.logo::before{
+   content: '';
+   position: absolute;
+   width: 3px;
+   height: 20px;
+   color: red;
+   background-color: #1c8806;
+   box-shadow: #2db811 3px 1px 0.1px .1px;
+   border-radius: 30px;
+   bottom: 2px;
+   left: -3px;
+}
+.logo h3::after{
+   content: '';
+   position: absolute;
+   width: 20px;
+   height: 3px;
+   color: red;
+   background-color: #1c8806;
+   box-shadow: #2db811 3px 1px 0.1px .1px;
+   border-radius: 80px;
+   top: 2px;
+   right: -3px;
+}
+.logo h3::before{
+   content: '';
+   position: absolute;
+   width: 3px;
+   height: 20px;
+   color: red;
+   background-color: #1c8806;
+   box-shadow: #2db811 3px 1px 0.1px .1px;
+   border-radius: 30px;
+   right: -3px;
+   top: 2px;
+}
+
 .nav ul{
-    position: relative;
-    display: flex;
-    gap: 1.4rem;
-    color: var(--first-text-color);
-    transition: 5s;
+   position: relative;
+   display: flex;
+   gap: 2rem;
 }
 .nav a{
-    display: flex;
+     display: flex;
     font-size: 2rem;
     gap: 1.4rem;
-    color: rgb(172, 148, 228);
+    color: rgb(75, 21, 202);
     position: relative;
-
 }
+.nav.active,
 .nav a:hover{
-    color: rgb(28, 6, 78);;
+   color: rgb(5, 136, 27);;
 }
 .nav a::before{
-    content: "";
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-    width: 0%;
-    height: 3px;
-    background-color: rgb(18, 6, 70);
-    transition: 1s;
+   content: "";
+   position: absolute;
+   bottom: -4px;
+   left: 0;
+   width: 0%;
+   height: 3px;
+   background-color: rgb(18, 6, 70);
+   transition: 1s;
 }
 .nav ul a:hover::before{
-    width: 100%;
+   width: 100%;
+}
+.menu-btn{
+    left: 30px;
+   display: none;
+   position: relative;
+   font-size: 1.5rem;
+   align-items: center;
+   color: var(--first-text-color);
+   transition: .5s;
+   cursor: pointer;
+}
+.menu-btn:hover{
+   transform: rotate(2deg,-4deg);
+   color: #989b98;
 }
 
+/* menu btn  */
+#close-menu{
+    display: none;
+}
+#check{
+   display: none;
+}
+#check:checked~.menu-btn  #open-menu{
+   display: none;
+}
+ #check:checked~.menu-btn #close-menu{
+   display: block;
+}
+ #check:checked~#menu-bar ul{
+    height: 42rem;
+    padding-top: 140px;
+}
 /*nav end */
+
+
+
 /* homme section start */
 
 .home-section{
@@ -163,10 +208,10 @@ span::before{
     position: relative;
     width: 100%;
     height: 100%;
-    min-height: 70vh;
+    min-height: 100vh;
     justify-content: center;
     align-items: center;
-    padding-inline: 10px;
+    padding-inline: 20px;
     gap: 5rem;
    
 }
@@ -174,24 +219,28 @@ span::before{
     display: block;
     justify-items: start;
     align-items: start;
-    gap: 10px;
+    gap: 1px;
 }
 .text-box .sub-text{
     font-size: 30px;
     font-family: font4;
     color: var(--third-text-color);
+    padding-inline: 12px;
  
 }
 .text-box .name-text{
     font-size: 40px;
     color: var(--second-text-color);
     font-family: font1;
+    padding-inline: 12px;
+    padding-inline: 12px;
  
 }
 .text-box .main-text{
    font-size: 50px;
    font-family: font3;
    color: var(--first-text-color);
+   padding-inline: 12px;
 }
 .text-box .p-text{
     font-size: 15px;
@@ -199,6 +248,8 @@ span::before{
     width: 410px;
     justify-items: center;
     align-items: center;
+    padding-bottom: 20px;
+    padding-inline: 30px;
 }
 .home-image{
     width: 251px;
@@ -264,6 +315,118 @@ span-img::before{
     bottom: -8px;
     left: -10px;
 }
+.dwlbtn a{
+    display: flex;
+    font-family: font3;
+    color: #1d3d9c;
+    font-weight: 600;
+    background: #68cadb;
+    border-radius: 30px;
+    padding-inline:10px;
+    padding-block: 4px;
+    cursor: pointer;
+}
+.dwlbtn a:hover{
+    transform: scale(.1px);
+    color: rgb(9, 62, 116);
+    background: #68cadb;
+    background: #40769b;
+    transition: 1.2s;
+}
+/* home page closed */
+
+
+/* about section */
+
+.about-section{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 10px;
+    gap: 5rem;
+}
+.about-section .heading{
+   font-size: 1.5rem;
+   color: var(--first-text-color);
+   font-family: font1;
+   padding-block: 12px;
+   position: absolute;
+   top: 0%;
+   left: 15%;
+}
+
+.heading::after{
+   content: '';
+   position: absolute;
+   width: 95px;
+   height: 3px;
+   color: red;
+   background-color: #1c8806;
+   box-shadow: #2db811 3px 1px 0.1px .1px;
+   border-radius: 80px;
+}
+.profile-section{
+      display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 10px;
+    gap: 5rem;
+    width: 800px;
+}
+.profile-section img{
+    width: 251px;
+    height: 370px;
+    background-color: rgb(0, 204, 255);
+    border-radius: 35px;
+    display: flex;
+    position: relative;
+}
+.text-box p{
+ font-size: 1.2rem;
+ padding-block: 12px;
+ color: #2a45b1;
+}
+.skill-heading{
+   font-size: 1.5rem;
+   color: var(--first-text-color);
+   font-family: font1;
+   padding-block: 12px;
+}
+.skill-list{
+   font-size: 1.5rem;
+   font-family: font1;
+   gap: 1.2rem;
+}
+.skill-list h5{
+   font-size: 1rem;
+   color: #2a45b1;
+   font-family: font1;
+   padding-block: 5px;
+   font-weight: 600;
+}
+
+/* .about-section closed */
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
