@@ -68,7 +68,28 @@ flex-wrap: wrap;
  padding-bottom: 50px;
 
 }
-
+.Portfolio-section .heading{
+   left: 35%;
+   justify-content: center;
 }
 
-
+.contact-section .heading{
+   left: 35%;
+   justify-content: center;
+}
+.contact-box h5{
+    font-size: 1rem;
+    color: #041cf1;
+    transition: 1.5s;
+}
+.contact-us{
+   display: block;
+}
+.contact-us p{
+    color: #041cf1;
+    padding-block: -10px;
+    font-size: 20px;
+    left: 0;
+    right: 0;
+}
+}

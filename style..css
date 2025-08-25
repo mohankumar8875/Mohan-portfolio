@@ -35,33 +35,6 @@ html{
     text-decoration: none;
     list-style: none;
 }
-/* navlogo and nav bar codes */
-@font-face {
-    font-family: font1;
-    src: url(fonts/Arimo/Arimo-Regular.ttf);
-}
-@font-face {
-    font-family: font2;
-    src: url(fonts/Mikado_Ultra.otf);
-}
-@font-face {
-    font-family: font3;
-    src: url(fonts/adlam-display/ADLaMDisplay-Regular.ttf);
-}
-@font-face {
-    font-family: font4;
-    src: url(font/ABeeZee-Regular.ttf);
-}
-:root{
-    --first-text-color: #061d7a;
-    --second-text-color: #1c8806;
-    --third-text-color: #a01111;
-    --first-background-color: white;
-    --second-background-color: rgb(4, 2, 29);
-    --first-shadow-color: ;
-    --first-hover-color: #1c8806;
-   
-}
 html{
     scroll-behavior: smooth;
     transition: 3s;
@@ -135,7 +108,6 @@ html{
    right: -3px;
    top: 2px;
 }
-
 .nav ul{
    position: relative;
    display: flex;
@@ -199,10 +171,7 @@ html{
 }
 /*nav end */
 
-
-
 /* homme section start */
-
 .home-section{
     display: flex;
     position: relative;
@@ -226,7 +195,6 @@ html{
     font-family: font4;
     color: var(--third-text-color);
     padding-inline: 12px;
- 
 }
 .text-box .name-text{
     font-size: 40px;
@@ -234,7 +202,6 @@ html{
     font-family: font1;
     padding-inline: 12px;
     padding-inline: 12px;
- 
 }
 .text-box .main-text{
    font-size: 50px;
@@ -269,7 +236,6 @@ html{
     border-radius: 80px;
     top: -10px ;
     right: -10px;
-   
 }
 .home-image::before{
     content: '';
@@ -289,7 +255,6 @@ html{
     object-fit: cover;
     border-radius: 35px;
     position: relative;
-
 }
 span-img::after{
     content: '';
@@ -328,16 +293,14 @@ span-img::before{
 }
 .dwlbtn a:hover{
     transform: scale(.1px);
-    color: rgb(9, 62, 116);
+    color: rgb(243, 243, 243);
     background: #68cadb;
     background: #40769b;
     transition: 1.2s;
 }
 /* home page closed */
 
-
 /* about section */
-
 .about-section{
     display: flex;
     position: relative;
@@ -357,17 +320,18 @@ span-img::before{
    position: absolute;
    top: 0%;
    left: 15%;
+   font-family: font3;
 }
-
 .heading::after{
-   content: '';
+    content: '';
    position: absolute;
-   width: 95px;
+   width: 100%;
    height: 3px;
    color: red;
    background-color: #1c8806;
    box-shadow: #2db811 3px 1px 0.1px .1px;
    border-radius: 80px;
+   bottom: 20px;
 }
 .profile-section{
       display: flex;
@@ -390,9 +354,10 @@ span-img::before{
     position: relative;
 }
 .text-box p{
- font-size: 1.2rem;
+ font-size: 1rem;
  padding-block: 12px;
  color: #2a45b1;
+ font-family: font1;
 }
 .skill-heading{
    font-size: 1.5rem;
@@ -411,40 +376,180 @@ span-img::before{
    font-family: font1;
    padding-block: 5px;
    font-weight: 600;
+   font-family: font3;
 }
-
 /* .about-section closed */
 
+/* .Portfolio-section */
+.Portfolio-section{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+.project-box{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    padding-top: 200px;
+}
+.project1{
+    background-color: rgba(164, 165, 218, 0.425);
+    width: 160px;
+    height: 240px;
+    justify-items: center;
+    align-content: center;
+    overflow: hidden;
+    border: 1px solid rgb(25, 177, 223);
+    border-radius: 35px;
+}
+.project1 img{
+    width: 160px;
+    height: 240px;
+    background-color: rgb(0, 204, 255);
+    border-radius: 35px;
+    position: relative;
+    cursor: pointer;
+    object-fit: cover; 
+}
+.project1 img:hover{
+    width: 160px;
+    height: 200px;
+    transition: 1.2s;
+}
+.project1 h2{
+    font-family: font1;
+    color: #061172;
+}
+.Portfolio-section .heading{
+   font-size: 1.5rem;
+   color: var(--first-text-color);
+   font-family: font1;
+   padding-block: 20px;
+   position: absolute;
+   top: 10%;
+   left: 15%;
+   font-family: font3;
+}
 
+.contact-section{
+    line-height: 20px;
+}
+.contact-section .heading{
+    font-size: 1.5rem;
+   color: var(--first-text-color);
+   font-family: font3;
+   padding-block: 38px;
+   position: absolute;
+   left: 15%;
+}
+.contact-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    gap: 7em;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    padding-bottom: 50px;
+}
+.contact-form img{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    justify-content: center;
+    align-items: center;
+}
+.contact-us {
+display: flex;
+gap: 2rem;
+padding-block: 32px;
+}
+.contact-us p{
+    color: #041cf1;
+    font-size: 15px;
+    padding-top: 60px;
+}
+.contact-box h5{
+    font-size: 2rem;
+    color: #041cf1;
+}
+.contact-form{
+    display: flex;
+    gap: 8rem;
+    align-items: center;
+}
+.contact-form form{
+    font-size: 3rem;
+    background: #e9eaf1;
+    justify-items: center;
+    border-radius: 20px;
+    border: #041cf1 1px solid;
+    box-shadow:1px 1px 10px 1px;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}
+.contact-form form p{
+    padding: 10px;
+}
+.contact-form form .blank{
+    padding: 10px;
+    border-radius: 20px;
+    font-family: font3;
+    
+}
+button{
+    border: #041cf1 1px solid;
+    border-radius: 20px;
+}
+.submit-btn{
+    color: #041cf1;
+    padding: 5px;
+    font-size: 1.2rem;
+    gap: 1rem;
+    cursor: pointer;
+    overflow: hidden;
+    font-family: font3;
+}
+.submit-btn i{
+   padding-inline: 1px;
+}
+.submit-btn:hover{
+    color: #ffffff;
+    background-color: #730ee6;
+    transition: 2s;
+}
+.footer-section{
+  text-align: center;
+  background-color: rgba(188, 188, 194, 0.1);
+  color: rgb(24, 3, 3);
+  height: 60px;
+  padding-block: 40px;
+}
+.footer-section span{
+    color: #061172;
+}
+.footer-section p{
+    color: #041cf1;
+    font-weight: 600;
+    padding-bottom: 10px;
+    font-family: font1;
+}
+.exm{
+    font-size: 10px;
+    padding-bottom: 30px;
+}
